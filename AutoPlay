@@ -711,7 +711,7 @@ sendinput {tab}{down 3}
 sleep 500
 sendinput {end}{shift down}{home}{shift up}
 sleep 500
-sendinput C:\Documents and Settings\Alice\Desktop\Loki\PHPs
+sendinput C:\Documents and Settings\Location\Desktop\Loki\PHPs
 sleep 5000
 sendinput {tab 5}
 sleep 500 
@@ -1253,7 +1253,7 @@ SendEmail:
 try
 {
 pmsg 			:= ComObjCreate("CDO.Message")
-pmsg.From 		:= """Loki"" <jasonteefey@gmail.com>"
+pmsg.From 		:= """Loki"" <EMAIL@Email.com>" ;;removed
 pmsg.To 		:= "EMAIL" ;;removed
 pmsg.BCC 		:= ""   ; Blind Carbon Copy, Invisable for all, same syntax as CC
 pmsg.CC 		:= ""
@@ -1273,8 +1273,8 @@ fields.smtpserverport     := 25 ; 465
 fields.smtpusessl      := True ; False
 fields.sendusing     := 2   ; cdoSendUsingPort
 fields.smtpauthenticate     := 1   ; cdoBasic
-fields.sendusername := "jasonteefey@gmail.com"
-fields.sendpassword := "Etc2t3345"
+fields.sendusername := "EMAIL@email.com" ;;removed
+fields.sendpassword := "PASSWORD" ;;removed
 fields.smtpconnectiontimeout := 60
 schema := "http://schemas.microsoft.com/cdo/configuration/"
 
